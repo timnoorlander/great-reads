@@ -1,4 +1,4 @@
-# GreatReads
+# Great Reads
 
 ## Assignment
 
@@ -29,7 +29,7 @@ There is no need to build a backend for the application. An open API or mock dat
 
 `npm run dev`
 
-## API used for this app
+## Book API used for this app
 
 I've decided to go for the OpenLibrary API. The docs can be found here: https://openlibrary.org/developers/api
 
@@ -60,4 +60,4 @@ I want to emphasis that, if this was a real life scenario, I would have discusse
 
 ### API complexity
 
-I introduced quite some complexity to improve the response time from the API, especially in the `getLatestBooks()` function. Unfortunately this seemed to be necessary, because querying the OpenLibrary search API without any parameters results is not performant and even results in a timeout. Therefore I decided to create a separate `getLatestBooks()` function that only select books from this and last year. `getBooks()` returns all books regardless of the year of publication and is therefore only used for the search results.
+I introduced quite some complexity to improve the response time from the API, especially in the `getLatestBooks()` function. Unfortunately this seemed to be necessary, because querying the OpenLibrary search API without any parameters does not seem to be performant and even results in a timeout. Therefore I decided to create a separate `getLatestBooks()` function that only select books from this and last year. `getBooks()` returns all books regardless of the year of publication and is therefore only used for the search results.
