@@ -29,6 +29,10 @@ There is no need to build a backend for the application. An open API or mock dat
 
 `npm run dev`
 
+## API used for this app
+
+I've decided to go for the OpenLibrary API. The docs can be found here: https://openlibrary.org/developers/api
+
 ## Things I would have liked to add
 
 - Error handling, especially for the API
